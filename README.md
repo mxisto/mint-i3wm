@@ -1,4 +1,4 @@
-![screenshot.png]
+![screenshot](screenshot.png)
 
 # mint-i3wm
 
