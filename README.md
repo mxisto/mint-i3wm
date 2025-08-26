@@ -16,3 +16,5 @@ There is also included some simple shellscripts that interact with i3blocks.
 - dunst
 - nitrogen
 - picom
+- numlockx
+- qlipper
