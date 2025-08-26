@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# shows the current avaliable space and usage percent on a specified disk
+
+#change the path on the command to the location where the disk is mounted
+
+disk1=$(df -h ~/ | awk 'NR==2 {print $4 " (" $5 ")"}')
+disk2=$(df -h ~/Kingston/ | awk 'NR==2 {print $4 " (" $5 ")"}')
+
+echo "🖴1:" $disk1 " 🖴2:" $disk2

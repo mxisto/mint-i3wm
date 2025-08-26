@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) notify-send -t 15000 "📆 $(ncal -S -b -h)"
+
+esac
+
+date '+%a, %d de %b de %Y'

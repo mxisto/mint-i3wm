@@ -1,0 +1,21 @@
+#!/bin/sh
+
+estado=$(xsct | awk '/^Screen/ {print $5}')
+
+valor=0
+
+turn="off"
+
+if [ $estado -eq 6500 ]; then #temperature value, change this to you preferred temperature
+	valor=3500
+	turn="on"
+else
+	valor=0
+	turn="off"
+fi
+
+case $BLOCK_BUTTON in
+	1) xsct $valor && notify-send "💡Night Light:" $turn ;;
+esac
+
+echo "💡"
